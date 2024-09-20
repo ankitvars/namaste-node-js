@@ -9,6 +9,9 @@ app.use(express.json()); // Parse incoming JSON requests
 app.get("/", (req, res) => {
   res.send("Hello, API!");
 });
+app.get("/login", (req, res) => {
+  res.send("Hello, Login!");
+});
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
